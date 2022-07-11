@@ -111,6 +111,21 @@
     </section>
     <!-- end of services -->
 
+    <!-- about -->
+    <section class="about">
+        <div class="image">
+            <img src="images/about-img.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>about us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam impedit earum ullam nostrum rerum qui
+                laborum voluptatibus consequatur culpa soluta, ipsum, ea tempora laboriosam. Quasi non vero incidunt
+                deleniti dicta.</p>
+            <a href="about.php" class='btn'>read more</a>
+        </div>
+    </section>
+    <!-- end of about -->
+
 
 
 
