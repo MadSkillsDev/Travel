@@ -112,7 +112,7 @@
     <!-- end of services -->
 
     <!-- about -->
-    <section class="about">
+    <section class="home-about">
         <div class="image">
             <img src="images/about-img.jpg" alt="">
         </div>
@@ -170,6 +170,17 @@
 
     </section>
     <!-- end of package -->
+
+    <!-- offer -->
+    <section class="offer">
+        <div class="content">
+            <h3>upto 50% off</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime laboriosam sapiente id rem placeat
+                temporibus accusamus, minus molestias quos aspernatur.</p>
+                <a href="book.php" class='btn'>book now</a>
+        </div>
+    </section>
+    <!-- end of offer -->
 
 
 

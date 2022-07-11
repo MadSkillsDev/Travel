@@ -270,32 +270,32 @@ section {
 /* end of services */
 
 /* about */
-.about {
+.home-about {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.about .image {
+.home-about .image {
   flex: 1 1 41rem;
 }
 
-.about .image img {
+.home-about .image img {
   width: 100%;
 }
 
-.about .content {
+.home-about .content {
   flex: 1 1 41rem;
   padding: 2rem;
   background: var(--light-bg);
 }
 
-.about .content h3 {
+.home-about .content h3 {
   font-size: 3rem;
   color: var(--black);
 }
 
-.about .content p {
+.home-about .content p {
   font-size: 1.5rem;
   padding: 1rem 0;
   line-height: 2;
@@ -355,6 +355,31 @@ section {
 }
 
 /* end of package */
+
+/* offer */
+.offer {
+  text-align: center;
+}
+
+.offer .content {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.offer .content h3 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.offer .content p {
+  font-size: 1.5rem;
+  color: var(--light-black);
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+/* end of offer */
 
 /* footer */
 .footer {

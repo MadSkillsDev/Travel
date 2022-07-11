@@ -40,9 +40,9 @@
     <div class="heading" style="background:url('./images/header-bg-1.png') no-repeat">
         <h1>about us</h1>
     </div>
-    <!-- heading -->
-
-    <!-- end of heading -->
+    <!-- about -->
+    
+    <!-- end of about -->
 
 
 
