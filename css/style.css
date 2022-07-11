@@ -303,6 +303,59 @@ section {
 }
 /* end of about */
 
+/* package */
+.package .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.package {
+  background-color: var(--light-bg);
+}
+
+.package .box-container .image {
+  height: 25rem;
+  overflow: hidden;
+}
+
+.package .box-container .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: 0.2s linear;
+}
+
+.package .box-container .box {
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  background: var(--white);
+}
+
+.package .box-container .box .content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.package .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.package .box-container .box .content p {
+  font-size: 1.5rem;
+  color: var(--light-black);
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+.package .load-more {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* end of package */
+
 /* footer */
 .footer {
   background: url('../images/footer-bg.jpg');
