@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>about</title>
 
     <!-- swiper css link  -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -16,14 +16,15 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
 
-
 </head>
 
 <body>
 
-    <!-- header -->
+    <!-- header section starts  -->
+
     <section class="header">
-        <a href="home.php" class='logo'>travel.</a>
+
+        <a href="home.php" class="logo">travel.</a>
 
         <nav class="navbar">
             <a href="home.php">home</a>
@@ -34,25 +35,29 @@
 
         <div id="menu-btn" class="fas fa-bars"></div>
 
-
     </section>
-    <!-- end of header -->
-    <div class="heading" style="background:url('./images/header-bg-1.png') no-repeat">
+
+    <!-- header section ends -->
+
+    <div class="heading" style="background:url(images/header-bg-1.png) no-repeat">
         <h1>about us</h1>
     </div>
-    <!-- about -->
+
+    <!-- about section starts  -->
+
     <section class="about">
+
         <div class="image">
             <img src="images/about-img.jpg" alt="">
         </div>
 
         <div class="content">
             <h3>why choose us?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quia et suscipit maiores iusto. Quaerat
-                quisquam adipisci vitae repellendus enim.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quae sed animi, quidem rem sit omnis odio
-                dolore, atque, officiis ratione. Laudantium distinctio repudiandae id quas, tempore possimus similique.
-                Delectus.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure numquam nulla iusto corporis dolor commodi
+                libero, vitae obcaecati optio rerum ab culpa nesciunt, earum mollitia quasi ipsam non. Aliquid, iure.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rerum, delectus voluptate aliquam
+                quaerat iusto repellendus error nulla ab atque.</p>
             <div class="icons-container">
                 <div class="icons">
                     <i class="fas fa-map"></i>
@@ -66,13 +71,15 @@
                     <i class="fas fa-headset"></i>
                     <span>24/7 guide service</span>
                 </div>
-
             </div>
+        </div>
 
     </section>
-    <!-- end of about -->
 
-    <!-- reviews -->
+    <!-- about section ends -->
+
+    <!-- reviews section starts  -->
+
     <section class="reviews">
 
         <h1 class="heading-title"> clients reviews </h1>
@@ -175,7 +182,8 @@
         </div>
 
     </section>
-    <!-- end of reviews -->
+
+    <!-- reviews section ends -->
 
 
 
@@ -185,7 +193,14 @@
 
 
 
-    <!-- footer -->
+
+
+
+
+
+
+    <!-- footer section starts  -->
+
     <section class="footer">
 
         <div class="box-container">
@@ -224,10 +239,18 @@
 
         </div>
 
-        <div class="credit"> created by <span>MadSkillsDev</span> | all rights reserved! </div>
+        <div class="credit"> created by <span>mr. web designer</span> | all rights reserved! </div>
 
     </section>
-    <!-- end of footer -->
+
+    <!-- footer section ends -->
+
+
+
+
+
+
+
 
 
     <!-- swiper js link  -->
@@ -235,6 +258,7 @@
 
     <!-- custom js file link  -->
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

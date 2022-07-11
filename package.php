@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Package</title>
+    <title>package</title>
 
     <!-- swiper css link  -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -16,14 +16,15 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
 
-
 </head>
 
 <body>
 
-    <!-- header -->
+    <!-- header section starts  -->
+
     <section class="header">
-        <a href="home.php" class='logo'>travel.</a>
+
+        <a href="home.php" class="logo">travel.</a>
 
         <nav class="navbar">
             <a href="home.php">home</a>
@@ -34,16 +35,20 @@
 
         <div id="menu-btn" class="fas fa-bars"></div>
 
-
     </section>
-    <!-- end of header -->
-    <div class="heading" style="background:url('./images/header-bg-2.png') no-repeat">
+
+    <!-- header section ends -->
+
+    <div class="heading" style="background:url(images/header-bg-2.png) no-repeat">
         <h1>packages</h1>
     </div>
 
-    <!-- packages -->
+    <!-- packages section starts  -->
+
     <section class="packages">
+
         <h1 class="heading-title">top destinations</h1>
+
         <div class="box-container">
 
             <div class="box">
@@ -52,8 +57,8 @@
                 </div>
                 <div class="content">
                     <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, iure.</p>
-                    <a href="book.php" class='btn'>book now</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
 
@@ -63,8 +68,8 @@
                 </div>
                 <div class="content">
                     <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, iure.</p>
-                    <a href="book.php" class='btn'>book now</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
 
@@ -74,8 +79,8 @@
                 </div>
                 <div class="content">
                     <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, iure.</p>
-                    <a href="book.php" class='btn'>book now</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
 
@@ -85,8 +90,8 @@
                 </div>
                 <div class="content">
                     <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, iure.</p>
-                    <a href="book.php" class='btn'>book now</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
 
@@ -96,8 +101,8 @@
                 </div>
                 <div class="content">
                     <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, iure.</p>
-                    <a href="book.php" class='btn'>book now</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
 
@@ -107,8 +112,8 @@
                 </div>
                 <div class="content">
                     <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, iure.</p>
-                    <a href="book.php" class='btn'>book now</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
 
@@ -118,8 +123,8 @@
                 </div>
                 <div class="content">
                     <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, iure.</p>
-                    <a href="book.php" class='btn'>book now</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
 
@@ -129,8 +134,8 @@
                 </div>
                 <div class="content">
                     <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, iure.</p>
-                    <a href="book.php" class='btn'>book now</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
 
@@ -140,8 +145,8 @@
                 </div>
                 <div class="content">
                     <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, iure.</p>
-                    <a href="book.php" class='btn'>book now</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
 
@@ -151,8 +156,8 @@
                 </div>
                 <div class="content">
                     <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, iure.</p>
-                    <a href="book.php" class='btn'>book now</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
 
@@ -162,8 +167,8 @@
                 </div>
                 <div class="content">
                     <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, iure.</p>
-                    <a href="book.php" class='btn'>book now</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
 
@@ -173,19 +178,18 @@
                 </div>
                 <div class="content">
                     <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, iure.</p>
-                    <a href="book.php" class='btn'>book now</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
 
-
         </div>
 
-        <div class="load-more">
-            <span class="btn">load more</span>
-        </div>
+        <div class="load-more"><span class="btn">load more</span></div>
+
     </section>
-    <!-- end of packages -->
+
+    <!-- packages section ends -->
 
 
 
@@ -197,7 +201,13 @@
 
 
 
-    <!-- footer -->
+
+
+
+
+
+    <!-- footer section starts  -->
+
     <section class="footer">
 
         <div class="box-container">
@@ -236,10 +246,18 @@
 
         </div>
 
-        <div class="credit"> created by <span>MadSkillsDev</span> | all rights reserved! </div>
+        <div class="credit"> created by <span>mr. web designer</span> | all rights reserved! </div>
 
     </section>
-    <!-- end of footer -->
+
+    <!-- footer section ends -->
+
+
+
+
+
+
+
 
 
     <!-- swiper js link  -->
@@ -247,6 +265,7 @@
 
     <!-- custom js file link  -->
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

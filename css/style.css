@@ -6,7 +6,7 @@
   --white: #fff;
   --light-black: #777;
   --light-white: #fff9;
-  --dark-bg: #rgba(0, 0, 0, 0.7);
+  --dark-bg: rgba(0, 0, 0, 0.7);
   --light-bg: #eee;
   --border: 0.1rem solid var(--black);
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -29,7 +29,15 @@ html {
   overflow-x: hidden;
 }
 
-htmk::-webkit-scrollbar-thumb {
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
 }
 
@@ -62,9 +70,9 @@ section {
 }
 
 .btn {
-  margin-top: 1rem;
   display: inline-block;
   background: var(--black);
+  margin-top: 1rem;
   color: var(--white);
   font-size: 1.7rem;
   padding: 1rem 3rem;
@@ -72,7 +80,7 @@ section {
 }
 
 .btn:hover {
-  background-color: var(--main-color);
+  background: var(--main-color);
 }
 
 .heading-title {
@@ -88,7 +96,7 @@ section {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10000;
+  z-index: 1000;
   background-color: var(--white);
   display: flex;
   padding-top: 2rem;
@@ -120,70 +128,6 @@ section {
   display: none;
 }
 
-@media (max-width: 1200px) {
-  section {
-    padding: 3rem 5%;
-  }
-}
-
-@media (max-width: 991px) {
-  html {
-    font-size: 55%;
-  }
-
-  section {
-    padding: 3rem 2rem;
-  }
-
-  .home .slide .content h3 {
-    font-size: 10vw;
-  }
-}
-
-@media (max-width: 768px) {
-  #menu-btn {
-    display: inline-block;
-    transition: 0.2s linear;
-  }
-
-  #menu-btn.fa-times {
-    transform: rotate(180deg);
-  }
-
-  .header .navbar {
-    position: absolute;
-    top: 99%;
-    left: 0;
-    right: 0;
-    color: var(--white);
-    border-top: var(--border);
-    padding: 2rem;
-    transition: 0.2s linear;
-    clip-path: polygon(0 0, 100% 0, 0 0);
-  }
-
-  .header .navbar.active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-
-  .header .navbar a {
-    display: block;
-    margin: 2rem;
-    text-align: center;
-  }
-}
-
-@media (max-width: 450px) {
-  html {
-    font-size: 50%;
-  }
-
-  .heading-title {
-    font-size: 3.5rem;
-  }
-}
-
-/* home */
 .home {
   padding: 0;
 }
@@ -201,6 +145,7 @@ section {
 
 .home .slide .content {
   width: 85rem;
+  display: none;
 }
 
 .home .swiper-slide-active .content {
@@ -212,20 +157,21 @@ section {
   font-size: 2.2rem;
   color: var(--light-white);
   padding-bottom: 1rem;
-  animation: fadeIn 0.3s linear backwards 0.2s;
+  animation: fadeIn 0.2s linear backwards 0.2s;
 }
 
 .home .slide .content h3 {
   font-size: 6vw;
   color: var(--white);
+  text-transform: uppercase;
   line-height: 1;
   text-shadow: var(--text-shadow);
   padding: 1rem 0;
-  animation: fadeIn 0.3s linear backwards 0.4s;
+  animation: fadeIn 0.2s linear backwards 0.4s;
 }
 
 .home .slide .content .btn {
-  animation: fadeIn 0.3s linear backwards 0.6s;
+  animation: fadeIn 0.2s linear backwards 0.6s;
 }
 
 .home .swiper-button-next,
@@ -236,18 +182,18 @@ section {
   right: 0;
   height: 7rem;
   width: 7rem;
-  background-color: var(--white);
+  background: var(--white);
   color: var(--black);
 }
 
 .home .swiper-button-next:hover,
 .home .swiper-button-prev:hover {
-  background-color: var(--main-color);
+  background: var(--main-color);
   color: var(--white);
 }
 
-.home .swiper-button-next:after,
-.home .swiper-button-prev:after {
+.home .swiper-button-next::after,
+.home .swiper-button-prev::after {
   font-size: 2rem;
 }
 
@@ -255,9 +201,6 @@ section {
   right: 7rem;
 }
 
-/* end of home */
-
-/* services */
 .services .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -268,11 +211,11 @@ section {
   padding: 3rem 2rem;
   text-align: center;
   background: var(--main-color);
+  cursor: pointer;
 }
 
 .services .box-container .box:hover {
   background: var(--black);
-  cursor: pointer;
 }
 
 .services .box-container .box img {
@@ -282,11 +225,9 @@ section {
 .services .box-container .box h3 {
   color: var(--white);
   font-size: 1.7rem;
+  padding-top: 1rem;
 }
 
-/* end of services */
-
-/* about */
 .home-about {
   display: flex;
   align-items: center;
@@ -303,7 +244,7 @@ section {
 
 .home-about .content {
   flex: 1 1 41rem;
-  padding: 2rem;
+  padding: 3rem;
   background: var(--light-bg);
 }
 
@@ -318,87 +259,83 @@ section {
   line-height: 2;
   color: var(--black);
 }
-/* end of about */
 
-/* package */
-.package .box-container {
+.home-packages {
+  background: var(--light-bg);
+}
+
+.home-packages .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
 }
 
-.package {
-  background-color: var(--light-bg);
-}
-
-.package .box-container .image {
-  height: 25rem;
-  overflow: hidden;
-}
-
-.package .box-container .image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: 0.2s linear;
-}
-
-.package .box-container .box {
+.home-packages .box-container .box {
   border: var(--border);
   box-shadow: var(--box-shadow);
   background: var(--white);
 }
 
-.package .box-container .box .content {
+.home-packages .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+
+.home-packages .box-container .box .image {
+  height: 25rem;
+  overflow: hidden;
+}
+
+.home-packages .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+
+.home-packages .box-container .box .content {
   padding: 2rem;
   text-align: center;
 }
 
-.package .box-container .box .content h3 {
+.home-packages .box-container .box .content h3 {
   font-size: 2.5rem;
   color: var(--black);
 }
 
-.package .box-container .box .content p {
+.home-packages .box-container .box .content p {
   font-size: 1.5rem;
   color: var(--light-black);
   line-height: 2;
   padding: 1rem 0;
 }
 
-.package .load-more {
+.home-packages .load-more {
   text-align: center;
   margin-top: 2rem;
 }
 
-/* end of package */
-
-/* offer */
-.offer {
+.home-offer {
   text-align: center;
 }
 
-.offer .content {
+.home-offer .content {
   max-width: 70rem;
   margin: 0 auto;
 }
 
-.offer .content h3 {
+.home-offer .content h3 {
   font-size: 3.5rem;
   text-transform: uppercase;
   color: var(--black);
 }
 
-.offer .content p {
+.home-offer .content p {
   font-size: 1.5rem;
   color: var(--light-black);
   line-height: 2;
   padding: 1rem 0;
 }
 
-/* end of offer */
-
-/* about */
 .about {
   display: flex;
   align-items: center;
@@ -456,9 +393,7 @@ section {
   color: var(--light-black);
   display: block;
 }
-/* end of about */
 
-/* reviews */
 .reviews {
   background: var(--light-bg);
 }
@@ -505,29 +440,11 @@ section {
   border-radius: 50%;
   margin-top: 1rem;
 }
-/* end of reviews */
 
-/* packages */
 .packages .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
-}
-
-.packages {
-  background-color: var(--light-bg);
-}
-
-.packages .box-container .image {
-  height: 25rem;
-  overflow: hidden;
-}
-
-.packages .box-container .image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: 0.2s linear;
 }
 
 .packages .box-container .box {
@@ -546,6 +463,22 @@ section {
   display: inline-block;
 }
 
+.packages .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+
+.packages .box-container .box .image {
+  height: 25rem;
+  overflow: hidden;
+}
+
+.packages .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+
 .packages .box-container .box .content {
   padding: 2rem;
   text-align: center;
@@ -557,7 +490,7 @@ section {
 }
 
 .packages .box-container .box .content p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: var(--light-black);
   line-height: 2;
   padding: 1rem 0;
@@ -567,9 +500,7 @@ section {
   text-align: center;
   margin-top: 2rem;
 }
-/* end of packages */
 
-/* booking */
 .booking .book-form {
   padding: 2rem;
   background: var(--light-bg);
@@ -587,7 +518,7 @@ section {
 
 .booking .book-form .flex .inputBox input {
   width: 100%;
-  padding: 1.2rem;
+  padding: 1.2rem 1.4rem;
   font-size: 1.6rem;
   color: var(--light-black);
   text-transform: none;
@@ -596,7 +527,7 @@ section {
 }
 
 .booking .book-form .flex .inputBox input:focus {
-  background-color: var(--black);
+  background: var(--black);
   color: var(--white);
 }
 
@@ -613,11 +544,8 @@ section {
   margin-top: 2rem;
 }
 
-/* end of booking */
-
-/* footer */
 .footer {
-  background: url('../images/footer-bg.jpg');
+  background: url(../images/footer-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -637,7 +565,7 @@ section {
 .footer .box-container .box a {
   color: var(--light-white);
   font-size: 1.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
   display: block;
 }
 
@@ -664,4 +592,71 @@ section {
   color: var(--main-color);
 }
 
-/* end of footer */
+/* media queries  */
+
+@media (max-width: 1200px) {
+  section {
+    padding: 3rem 5%;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  section {
+    padding: 3rem 2rem;
+  }
+
+  .home .slide .content h3 {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading h1 {
+    font-size: 4rem;
+  }
+
+  #menu-btn {
+    display: inline-block;
+    transition: 0.2s linear;
+  }
+
+  #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    border-top: var(--border);
+    padding: 2rem;
+    transition: 0.2s linear;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .navbar a {
+    display: block;
+    margin: 2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading-title {
+    font-size: 3.5rem;
+  }
+}
