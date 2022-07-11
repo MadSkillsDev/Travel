@@ -45,8 +45,8 @@ section {
 }
 
 .heading {
-  background-size: cover!important;
-  background-position: center!important;
+  background-size: cover !important;
+  background-position: center !important;
   padding-top: 10rem;
   padding-bottom: 15rem;
   display: flex;
@@ -415,7 +415,7 @@ section {
 }
 
 .about .content {
-  flex:  1 1 41rem;
+  flex: 1 1 41rem;
   text-align: center;
 }
 
@@ -449,7 +449,6 @@ section {
   font-size: 4rem;
   margin-bottom: 2rem;
   color: var(--main-color);
-
 }
 
 .about .content .icons-container .icons span {
@@ -474,10 +473,10 @@ section {
 }
 
 .reviews .slide .stars {
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
-.reviews .slide .stars i{
+.reviews .slide .stars i {
   font-size: 1.7rem;
   color: var(--main-color);
 }
@@ -506,10 +505,69 @@ section {
   border-radius: 50%;
   margin-top: 1rem;
 }
-
-
-
 /* end of reviews */
+
+/* packages */
+.packages .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.packages {
+  background-color: var(--light-bg);
+}
+
+.packages .box-container .image {
+  height: 25rem;
+  overflow: hidden;
+}
+
+.packages .box-container .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: 0.2s linear;
+}
+
+.packages .box-container .box {
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  background: var(--white);
+  display: none;
+}
+
+.packages .box-container .box:nth-child(1),
+.packages .box-container .box:nth-child(2),
+.packages .box-container .box:nth-child(3),
+.packages .box-container .box:nth-child(4),
+.packages .box-container .box:nth-child(5),
+.packages .box-container .box:nth-child(6) {
+  display: inline-block;
+}
+
+.packages .box-container .box .content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.packages .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.packages .box-container .box .content p {
+  font-size: 1.4rem;
+  color: var(--light-black);
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+.packages .load-more {
+  text-align: center;
+  margin-top: 2rem;
+}
+/* end of packages */
 
 /* footer */
 .footer {
